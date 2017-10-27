@@ -6,7 +6,9 @@ class HomePage extends Component {
     return (
       <div className="App">
         <h1>This is the home page</h1>
-        <Link to='setstate'><button>Set State</button></Link>
+        <Link to='/setstate'><button>Set State</button></Link>
+        <Link to='/reduxsection'><button>Hey, Lets see if the store works!</button></Link>
+
       </div>
     );
   }
