@@ -22,6 +22,92 @@
   font-size: large;
 }
 
+.navbar{
+  position: fixed;
+  height: 50px;
+  width: 100vw;
+  background: rgba(255,255,255, .9);
+  
+}
+
+.nav-bar-homepage{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#home-tab{
+  font-size: 25px;
+  color: red;
+}
+
+.nav-bar-homepage > h4 {
+  color: blue
+}
+
+section{
+  padding-top: 100px;
+  margin-bottom: 400px;
+}
+
+.background{
+  position: absolute;
+  margin: 35px 0px 0px 150px;  
+  border: 3px dotted steelblue;
+  width: 200px;
+  height: 200px;
+  background: rgba(0,0,0, .3);
+  box-sizing: border-box;
+  
+}
+
+.background-image{
+  width: 150px;
+  height: 150px;
+  background: url('./pics/cake.png') no-repeat 100%;
+  background-position: left;
+}
+
+.left-button{
+  position: absolute;
+  border-bottom: 2px solid blue;
+}
+
+section span {
+  position: relative;
+  z-index: 20;
+  padding-right: 15px;
+  font-size: 25px;
+  color: blue;
+  font-weight: 600;
+  float: right;
+}
+
+div + li {
+  color: green;
+  font-size: 19px;
+}
+
+.list{
+display: flex;
+width: 400px;
+height: 100px;
+background: rgba(0,0,0, .3);
+justify-content: flex-end;
+
+}
+.ul-list{
+  margin-left: 55px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+  
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

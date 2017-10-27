@@ -14,6 +14,7 @@ class ReduxSection extends Component {
         return (
             <div className="App">
                 <h1>Redux Section</h1>
+                <Link to='/'><button>Go Home</button></Link>
                 <div>
                     <button onClick={() => this.props.tabTF(!this.props.tab)}>Open Tab Using Redux</button>
                 </div>
