@@ -10,6 +10,7 @@ class HomePage extends Component {
                         <span id="home-tab">Home</span>
                         <Link to='/setstate'><button>Set State</button></Link>
                         <Link to='/reduxsection'><button>Hey, Lets see if the store works!</button></Link>
+                        <Link to='/serverpage'><button>Play with the server</button></Link>
                         <h4>The carrot selector worked! </h4>
                     </div>
                 </div>

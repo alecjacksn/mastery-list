@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "massive": "^4.4.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
@@ -12,5 +17,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "server/server.js",
+  "proxy": "http://localhost:3005",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
