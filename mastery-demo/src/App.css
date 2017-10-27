@@ -2,10 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+
 
 .App-header {
   background-color: #222;
@@ -26,7 +23,7 @@
   position: fixed;
   height: 50px;
   width: 100vw;
-  background: rgba(255,255,255, .9);
+  background: rgba(0,0,0, .6);
   
 }
 
@@ -59,7 +56,8 @@ section{
   height: 200px;
   background: rgba(0,0,0, .3);
   box-sizing: border-box;
-  
+  box-shadow: 2px 12px 15px rgba(0,0,0, .5);
+  margin-bottom: 25px;
 }
 
 .background-image{
@@ -70,11 +68,66 @@ section{
 }
 
 .left-button{
+  text-align:center;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  border-bottom: 2px solid blue;
+  transition: .3s ease-in-out;
+  font-style: oblique;
 }
 
+.button-focus{
+  width: 100px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.button-disabled:disabled{
+  width: 100px;
+  height: 35px;
+  border-radius: 3px;
+  
+}
+
+.button-focus:focus{
+  background: none;
+  outline: none;
+  border: 2px solid black;
+}
+
+li:nth-child(4){
+  color: blue;
+}
+
+.left-button:hover{
+  margin-left: 20px;
+  transform: scale(1.3) rotate(360deg);
+  
+}
+
+.left-button-face{
+  animation: left-button-face infinite 2s linear;
+  text-align:center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transition: .3s ease-in-out;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+
+@keyframes left-button-face {
+  
+    from { transform: scale(1); }
+    to { transform: scale(1.7); }
+  }
+
+
+
+
 section span {
+  text-shadow: 2px 2px 5px rgba(0,0,0, .6);
   position: relative;
   z-index: 20;
   padding-right: 15px;
@@ -93,7 +146,7 @@ div + li {
 display: flex;
 width: 400px;
 height: 100px;
-background: rgba(0,0,0, .3);
+background: linear-gradient( to right , rgba(0,0,0, .6), red);
 justify-content: flex-end;
 
 }
@@ -108,7 +161,5 @@ justify-content: flex-end;
 }
 
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+
+

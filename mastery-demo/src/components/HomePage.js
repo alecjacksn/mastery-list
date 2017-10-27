@@ -25,6 +25,11 @@ class HomePage extends Component {
                     <div className="left-button">
                         Twitter
                     </div>
+                    <div className="left-button-face">
+                        facebook
+                    </div>
+                    <button className="button-focus">Focus on me</button>
+                    <button className="button-disabled">im disabled</button>
                 </section>
                 <div className="list">
                     <ul className="ul-list">
