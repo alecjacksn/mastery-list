@@ -39,12 +39,7 @@ class ServerPage extends Component {
         }
     }
 
-    resetFunction(){
-        this.props.getUserInfo(!this.props.reload)
-    }
-
     mapThroughInfo() {
-        var q = this.resetFunction
         var data = {
             name: '',
             company: '',
@@ -65,7 +60,7 @@ class ServerPage extends Component {
                 id: e.id
             }
             axios.post('/api/editmaster', post).then(()=> {
-                q()
+            
                 
             })
             

@@ -11,6 +11,6 @@ export default (
         <Route exact path ='/' component={HomePage}/>
         <Route path ='/setstate' component={SetState}/>
         <Route path ='/reduxsection' component={ReduxSection}/>
-        <Route path ='/serverpage' render={ServerPage}/>
+        <Route path ='/serverpage' component={ServerPage}/>
     </Switch>
 )
