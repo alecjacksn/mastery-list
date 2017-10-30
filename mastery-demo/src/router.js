@@ -18,7 +18,7 @@ export default (
         <Route path='/setstate' component={SetState} />
         <Route path='/reduxsection' component={ReduxSection} />
         <Route path='/serverpage' component={ServerPage} />
-        <Route path='/home' test={"Worksssss"}/>
+        <Route path='/:home' component={HomePage}/>
         <Route path='/there' render={(props) => {
             return <div>You are here</div>
         }} />

@@ -33,7 +33,7 @@ class SetState extends Component {
     render() {
         return (
             <div className="App">
-                <Link to='/'><button>Go Home</button></Link>
+                <Link to={`${this.props.match.params.homepage}`}><button>Go Home</button></Link>
                 <br/>
                 <div>
                 <br/>

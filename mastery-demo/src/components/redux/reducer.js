@@ -1,7 +1,8 @@
 var initialState = {
     tab: false,
     item: 'Got it',
-    reload: true
+    reload: true,
+    homepage: '/'
 }
 
 
